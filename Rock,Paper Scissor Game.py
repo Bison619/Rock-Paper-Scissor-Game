@@ -28,8 +28,6 @@ def game(comp, you):
             return True
         elif you == 'Paper':
             return False
-    else:
-        print("Can't Understand Choose from the Given input")
 
 # computer choosing random data
 print(" Computer will chose first ,")
@@ -43,6 +41,7 @@ else:
 
 # User input
 you = input(" Choose from Rock(Rock) Paper(Paper) or Scissors(Scissor) : ")
+you.lower()
 
 # function call
 a = game(comp,you)
